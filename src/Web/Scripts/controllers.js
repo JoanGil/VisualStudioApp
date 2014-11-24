@@ -31,5 +31,11 @@ angular.module('app.controllers', []).controller('HomeCtrl', [
         $scope.$on('$viewContentLoaded', function () {
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
+    }]).controller('DatabaseCtrl', [
+    '$scope', '$location', '$window', function ($scope, $location, $window) {
+        $scope.$root.title = 'AngularJS SPA Database page';
+        $scope.$on('$viewContentLoaded', function () {
+            $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
+        });
     }]);
 //# sourceMappingURL=controllers.js.map

@@ -33,10 +33,17 @@ angular.module('app.controllers', [])
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });
     }])
-
-    // Path: /error/404
+// Path: /error/404
     .controller('Error404Ctrl', ['$scope', '$location', '$window', ($scope, $location, $window) => {
         $scope.$root.title = 'Error 404: Page Not Found';
+        $scope.$on('$viewContentLoaded', () => {
+            $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
+        });
+    }])
+
+    // Path: /database
+    .controller('DatabaseCtrl', ['$scope', '$location', '$window', ($scope, $location, $window) => {
+        $scope.$root.title = 'AngularJS SPA Database page';
         $scope.$on('$viewContentLoaded', () => {
             $window.ga('send', 'pageview', { 'page': $location.path(), 'title': $scope.$root.title });
         });

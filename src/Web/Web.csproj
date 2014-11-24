@@ -480,6 +480,7 @@
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\_PageStart.cshtml" />
     <Content Include="Views\About.cshtml" />
+    <Content Include="Views\Database.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -544,6 +545,8 @@
           <DevelopmentServerPort>47030</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:47030/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:47030/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
